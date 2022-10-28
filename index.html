@@ -6,10 +6,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Rental Estimator</title>
+    <style>
+        #container {
+            width: 80%;
+            margin: 10px auto;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input {
+            display: inline;
+        }
+
+        fieldset {
+            margin: 16px;
+        }
+
+        input[type=button] {
+            margin: 16px;
+        }
+
+        table,
+        tr {
+            border-bottom: 1px solid black;
+        }
+
+        tr>th {
+            text-align: right;
+            padding: 10px;
+        }
+
+        tr:last-of-type>td:last-of-type {
+            background-color: rgb(239, 243, 11);
+        }
+    </style>
 </head>
 
 <body>
-    <h1>ACME Car Rental</h1>
+    <div id="container">
+        <h1>ACME Car Rental</h1>
+        <form>
+            <fieldset>
+                <legend>Pickup Information</legend>
+                <label for="pickupDate">Pickup Date:</label>
+                <input type="text" id="pickupDate">
+                <label for="numDays">Number of Days:</label>
+                <input type="text" id="numDays">
+            </fieldset>
+
+            <fieldset>
+                <legend>Options</legend>
+                <input type="checkbox" name="tollTag" id="tollTag">
+                <label for="tollTag">Electronic Toll Tag ($3.95/day)</label>
+                <input type="checkbox" name="gps" id="gps">
+                <label for="gps">GPS ($2.95/day)</label>
+                <input type="checkbox" name="roadside" id="roadside">
+                <label for="gps">Roadside Assistance ($2.95/day)</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Under 25?</legend>
+                <input type="radio" name="under25" id="no">
+                <label for="no">No</label>
+                <input type="radio" name="under25" id="yes">
+                <label for="yes">Yes</label>
+            </fieldset>
+
+            <input type="button" value="Estimate Total Cost">
+        </form>
+        <table>
+            <tr>
+                <th>Car Rental:</th>
+                <td>xxx.xx</td>
+            </tr>
+            <tr>
+                <th>Options:</th>
+                <td>xxx.xx</td>
+            </tr>
+            <tr>
+                <th>Under 25 Surcharge:</th>
+                <td>xxx.xx</td>
+            </tr>
+            <tr>
+                <th></th>
+            </tr>
+            <tr>
+                <th>Total Due:</th>
+                <td>xxx.xx</td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
