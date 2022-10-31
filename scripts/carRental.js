@@ -1,6 +1,4 @@
 // html elements
-const pickupDateElement = document.getElementById('pickupDate');
-// console.log(pickupDateElement);
 const numDaysElement = document.getElementById('numDays');
 // console.log(numDaysElement);
 const estimateBtn = document.querySelector('input[type=button]');
