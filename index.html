@@ -51,7 +51,7 @@
             <fieldset>
                 <legend>Pickup Information</legend>
                 <label for="pickupDate">Pickup Date:</label>
-                <input type="text" id="pickupDate">
+                <input type="date" id="pickupDate">
                 <label for="numDays">Number of Days:</label>
                 <input type="text" id="numDays">
             </fieldset>
@@ -68,9 +68,9 @@
 
             <fieldset>
                 <legend>Under 25?</legend>
-                <input type="radio" name="under25" id="no">
+                <input type="radio" name="under25" id="under25no">
                 <label for="no">No</label>
-                <input type="radio" name="under25" id="yes">
+                <input type="radio" name="under25" id="under25yes">
                 <label for="yes">Yes</label>
             </fieldset>
 
@@ -79,25 +79,26 @@
         <table>
             <tr>
                 <th>Car Rental:</th>
-                <td>xxx.xx</td>
+                <td id="rentalCharge">xxx.xx</td>
             </tr>
             <tr>
                 <th>Options:</th>
-                <td>xxx.xx</td>
+                <td id="optionsCharge">xxx.xx</td>
             </tr>
             <tr>
                 <th>Under 25 Surcharge:</th>
-                <td>xxx.xx</td>
+                <td id="surcharge">xxx.xx</td>
             </tr>
             <tr>
                 <th></th>
             </tr>
             <tr>
                 <th>Total Due:</th>
-                <td>xxx.xx</td>
+                <td id="totalDue">xxx.xx</td>
             </tr>
         </table>
     </div>
+    <script src="scripts/carRental.js"></script>
 </body>
 
 </html>
